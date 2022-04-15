@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 50px rgb(92, 92, 92);
+  width: 400px;
+  height: 630px;
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+h1 {
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.order-p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: hsl(224, 23%, 55%);
+  padding: 0 2rem;
+}
+
+.plans {
+  background-color: hsl(225, 100%, 98%);
+  position: relative;
+  font-size: 15px;
+  margin: 0 auto;
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.music-img {
+  position: absolute;
+  width: 40px;
+  left: 10px;
+  top: 20px;
+}
+
+.annual-text {
+  position: absolute;
+  top: 18px;
+  left: 65px;
+}
+
+.annual-text h3 {
+  font-size: 15px;
+  font-weight: 900;
+  margin-bottom: 3px;
+}
+
+.change-plan {
+  color: hsl(245, 75%, 52%);
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 32px;
+  right: 15px;
+}
+
+.change-plan:active {
+  color: hsla(245, 75%, 52%, 0.6);
+}
+
+button {
+  display: block;
+  width: 300px;
+  box-shadow: 1px 1px 20px gray;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 900;
+  font-size: 15px;
+  margin: 30px auto 30px auto;
+}
+
+button:active {
+  background-color: hsl(245, 75%, 52%, 0.6);
+}
+
+.cancel-order {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+.cancel-order:active {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: repeat-x;
+  }
+
+  .card {
+    width: 340px;
+    margin-bottom: 20px;
+  }
+}
